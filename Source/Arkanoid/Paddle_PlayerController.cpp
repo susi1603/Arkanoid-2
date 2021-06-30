@@ -4,7 +4,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Camera/CameraActor.h"
 #include "Paddle.h"
-//#include "Ball.h"
+#include "Ball.h"
 
 APaddle_PlayerController::APaddle_PlayerController()
 {
@@ -33,4 +33,9 @@ void APaddle_PlayerController::MoveHorizontal(float AxisValue)
     {
         MyPawn->MoveHorizontal(AxisValue);
     }
+}
+void APaddle_PlayerController::Launch() {
+}
+
+void APaddle_PlayerController::SpawnNewBall() {
 }
